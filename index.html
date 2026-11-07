@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Shop<span>Zone</span>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <button class="cart-button" id="cartToggle">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <span class="hero-tag">BIGGEST SALE OF THE SEASON</span>
+
+            <h1>
+                Discover Your
+                <span>Perfect Style</span>
+            </h1>
+
+            <p>
+                Shop the latest trends in fashion, electronics,
+                accessories and more. Amazing products at amazing prices!
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=900"
+                alt="Shopping sale banner"
+            >
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Explore Categories</h2>
+
+        <div class="category-list">
+
+            <button class="category-btn active" data-category="All">
+                All Products
+            </button>
+
+            <button class="category-btn" data-category="Electronics">
+                Electronics
+            </button>
+
+            <button class="category-btn" data-category="Fashion">
+                Fashion
+            </button>
+
+            <button class="category-btn" data-category="Accessories">
+                Accessories
+            </button>
+
+            <button class="category-btn" data-category="Home">
+                Home
+            </button>
+
+            <button class="category-btn" data-category="Footwear">
+                Footwear
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+            <div>
+                <h2>Featured Products</h2>
+                <p>Explore our latest collection</p>
+            </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <p class="loading">Loading products...</p>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Shopping Cart 🛒</h2>
+            <button id="closeCart" class="close-btn">✕</button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your cart is empty!</p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Stay Updated!</h2>
+
+        <p>
+            Subscribe to get updates about new products and special offers.
+        </p>
+
+        <form id="newsletterForm">
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">Subscribe</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            Shop<span>Zone</span>
+        </div>
+
+        <p>
+            Your one-stop destination for quality products
+            at amazing prices.
+        </p>
+
+        <div class="footer-links">
+            <a href="#products">Products</a>
+            <a href="#products">Shop</a>
+            <a href="#products">Collections</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
